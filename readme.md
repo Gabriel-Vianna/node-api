@@ -1,58 +1,58 @@
 API Pet-Shop<br>
 <br>
-API construída em NodeJS, utilizando o framework Express e o banco de dados MySQL.<br>
-O objetivo da API é oferecer um serviço de agendamento e consulta de serviços em um Pet-shop.
+API built on NodeJS using Express framework and MySQL database.<br>
+The goal is to provide a scheduling and consultation API in a pet shop.
 
-Após clonar o projeto, siga os passos para instalar as dependencias e iniciar a aplicação, é necessário ter o NodeJS previamente instalado no computador.
+After cloning the repository, follow the steps to install the dependencies and launch the application, you must have NodeJS previously installed on the computer.
 
 $ cd pet-shop<br>
 $ npm install<br>
 $ npm start<br>
 <br>
 <br>
-Rotas de resposta da API:
+API Response Routes:
 <br>
-Listar dados<br>
-<br>
--> Endpoint: http://localhost:3000/atendimentos<br>
-método HTTP: GET<br>
-Resposta: Retorna um objeto JSON com todos os serviços agendados no banco de dados.<br>
-<br>
-<br>
-Criar registro<br>
+List records<br>
 <br>
 -> Endpoint: http://localhost:3000/atendimentos<br>
-método HTTP: POST<br>
-Resposta: Envia para o servidor uma requisição com os campos necessários para ser agendado um novo serviço, caso a requisição tenha sucesso é retornado um objeto JSON criado.<br>
+Method HTTP: GET<br>
+Response: Returns a JSON object with all scheduled services in the database.<br>
+<br>
+<br>
+Create record<br>
+<br>
+-> Endpoint: http://localhost:3000/atendimentos<br>
+Method HTTP: POST<br>
+Response: Sends a request to the server with the fields required to schedule a new service, if the request succeeds, the created JSON object is returned.<br>
 
-Campos necessários para a requisição:
+Required fields for requisition:
 
--> cliente: String com o nome do cliente<br>
--> pet: String com o nome do pet<br>
--> servico: String com o nome do serviço a ser agendado no pet-shop<br>
--> status: String com o status do serviço (Agendado/Cancelado/Adiado...)<br>
--> observacoes: String com as observações a respeito do animal<br>
--> data: Data no formato DD/MM/YYYY, informando a data do serviço<br>
+-> cliente: String with the client name<br>
+-> pet: String with the pet name<br>
+-> servico: String with the name of the service to be scheduled in the pet shop<br>
+-> status: String with service status (Scheduled/Canceled/Delayed ...)<br>
+-> observacoes: String with remarks about the animal<br>
+-> data: Date in DD/MM/YYYY format, informing the service date<br>
 <br>
 <br>
-Buscar por ID<br>
-<br>
--> Endpoint: http://localhost:3000/atendimentos/id<br>
-Método HTTP: GET<br>
-Resposta: Retorna um objeto JSON associado ao ID passado na url da requisição.<br>
-<br>
-<br>
-Deletar Registro<br>
+Search by ID<br>
 <br>
 -> Endpoint: http://localhost:3000/atendimentos/id<br>
-Método HTTP: DELETE<br>
-Resposta: Deleta o registro associado ao ID passado como parâmetro.<br>
+Method HTTP: GET<br>
+Response: Returns a JSON object associated with the ID passed in the request url.<br>
 <br>
 <br>
-Editar Registro<br>
+Delete record<br>
 <br>
 -> Endpoint: http://localhost:3000/atendimentos/id<br>
-Método HTTP: PATCH<br>
-Resposta: Envia uma requisição ao servidor passando no body os campos a serem editados em um registro existente, deve ser passado o id do registro na url da requisição.<br>
+Method HTTP: DELETE<br>
+Response: Deletes the record associated with the ID passed as a parameter.<br>
+<br>
+<br>
+Edit record<br>
+<br>
+-> Endpoint: http://localhost:3000/atendimentos/id<br>
+Method HTTP: PATCH<br>
+Response: Send a request to the server passing in the body the fields to be edited in an existing record, must be passed the record id in the request url.<br>
 <br>
 <br>
