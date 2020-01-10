@@ -1,20 +1,16 @@
-API Pet-Shop
+API Pet-Shop<br>
 <br>
-API construída em NodeJS, utilizando o framework Express e o banco de dados MySQL.
+API construída em NodeJS, utilizando o framework Express e o banco de dados MySQL.<br>
 O objetivo da API é oferecer um serviço de agendamento e consulta de serviços em um Pet-shop.
-
 
 Após clonar o projeto, siga os passos para instalar as dependencias e iniciar a aplicação, é necessário ter o NodeJS previamente instalado no computador.
 
 $ cd pet-shop<br>
 $ npm install<br>
 $ npm start<br>
-
 <br>
 <br>
 Rotas de resposta da API:
-<br>
-<br>
 <br>
 Listar dados<br>
 <br>
